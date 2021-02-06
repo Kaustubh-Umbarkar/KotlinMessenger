@@ -59,7 +59,7 @@ class RegisterActivity : AppCompatActivity() {
 
         if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null) {
             // proceed and check what the selected image was....
-            Log.d(TAG, "Photo was selected")
+            Log.d(TAG, "Photo was selected!")
 
             selectedPhotoUri = data.data
 
