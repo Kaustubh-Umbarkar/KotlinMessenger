@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/friends"/>
+
+    <EditText
+        android:id="@+id/etEmail_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:paddingLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email "
+        android:layout_below="@+id/etUserName_register"/>
+    <EditText
+        android:id="@+id/etPassword_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:hint="Password "
+        android:layout_below="@+id/etEmail_login" />
+    <Button
+
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_btn_reg_log"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_below="@+id/etPassword_login"
+        />
+
+    <TextView
+        android:id="@+id/tvBackToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Back to Registration"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/btnLogin"
+        />
+</RelativeLayout>

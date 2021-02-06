@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".RegisterActivity"
+
+
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivSelectPhotoRegister"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+    <Button
+        android:id="@+id/btnSelectPhoto"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Select Photo"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_profile"
+
+       />
+
+    <EditText
+        android:id="@+id/etUserName_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="Username "
+        android:textColor="#2a2a2a"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/btnSelectPhoto"
+         />
+
+    <EditText
+        android:id="@+id/etEmail_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:paddingLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email "
+        android:textColor="#2a2a2a"
+        android:ems="10"
+        android:layout_below="@+id/etUserName_register"
+        />
+    <EditText
+        android:id="@+id/etPassword_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:hint="Password "
+        android:ems="10"
+        android:textColor="#2a2a2a"
+        android:layout_below="@+id/etEmail_register" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:background="@drawable/round_btn_reg_log"
+        android:layout_below="@+id/etPassword_register"
+        />
+    <TextView
+        android:id="@+id/tvAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Already have an Account?"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/mainText"
+        android:layout_below="@+id/btnRegister"
+        />
+</RelativeLayout>
